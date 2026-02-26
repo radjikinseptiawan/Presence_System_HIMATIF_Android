@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sistem Absensi Himatif</string>
+    <string name="app_title">SISTEM ABSENSI HIMATIF</string>
+    <string name="logo_himatif">Logo Himatif</string>
+    <string name="hadir">H</string>
+    <string name="izin">I</string>
+    <string name="sakit">S</string>
+    <string name="alpha">A</string>
+</resources>

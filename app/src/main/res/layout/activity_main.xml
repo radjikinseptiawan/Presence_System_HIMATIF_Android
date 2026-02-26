@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--   Parent View-->
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- Navigasi Lobby -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/dark_blue"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:gravity="clip_horizontal"
+        >
+<!--    Linear untuk tulisan  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            >
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+<!--        LinearLayout untuk icon HIMATIF -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_circle"
+            android:layout_alignParentEnd="true"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logohimatif"
+                android:contentDescription="@string/logo_himatif"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+<!--   Tanggal Agenda     -->
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:padding="12dp"
+         >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Tanggal Agenda"
+             android:textSize="18sp"
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             />
+         <CalendarView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+             <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="12dp"
+             android:text="H: 18/18"
+             />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="I: 18/18"
+               android:layout_marginRight="12dp"
+            />
+
+            <TextView
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S: 18/18"
+            />
+            <TextView
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: 18/18"
+            />
+            </LinearLayout>
+
+
+            <!--  Kehadiran Anggota  -->
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/member_card"
+                tools:ignore="MissingConstraints">
+
+                <!--Identitas Pengurus-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Anggota"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jabatan Anggota"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                </LinearLayout>
+                <!--     Bagian Button Kehadiran  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="bottom|center"
+                    >
+
+                    <Button
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/btn_inactive"
+                        android:text="H"/>
+
+                    <Button
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/btn_inactive"
+                        android:text="I"/>
+
+                    <Button
+                        android:backgroundTint="@color/btn_inactive"
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="S"/>
+
+                    <Button
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/btn_inactive"
+                        android:text="A"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+     </RelativeLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
