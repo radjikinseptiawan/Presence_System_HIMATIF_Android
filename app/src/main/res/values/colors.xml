@@ -4,5 +4,6 @@
     <color name="dark_blue">#0c2b4b</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#E4E4E4</color>
+    <color name="light_blue">#C5DFEF</color>
     <color name="btn_inactive">#76777a</color>
 </resources>

@@ -5,5 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="CustomCalendar">
+        <item name="android:colorAccent">#FFFFFF</item>
+        <item name="android:textColorPrimaryInverse">#FFEB3B</item>
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
     <style name="Theme.Bicara" parent="Base.Theme.Bicara" />
 </resources>
